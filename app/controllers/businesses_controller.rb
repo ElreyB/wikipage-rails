@@ -7,7 +7,6 @@ class BusinessesController < ApplicationController
 
   def show
     @business = Business.find(params[:id])
-    render :show
   end
 
   def create
@@ -33,7 +32,6 @@ class BusinessesController < ApplicationController
   def edit
     @type = Type.find(params[:type_id])
     @business = Business.find(params[:id])
-    render :edit
   end
 
   def destroy
